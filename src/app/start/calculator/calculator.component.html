@@ -1,0 +1,47 @@
+<div class="flex-container">
+    <div class="flex-item-cal box-element">
+        <h3 style="font-size: 1.1rem; margin-bottom: 0px;">Eligibility Calculator</h3>
+        <form class="form">
+            <div class="form-field">
+                <app-range [label]="'Monthly Income'" [min]="'100000'" [max]="'300000'"></app-range>
+                <app-range [label]="'Monthly Expense'" [min]="'10000'" [max]="'100000'"></app-range>
+            </div>
+            <div class="form-field">
+                <label for="EMI">Repayment Tenure</label>
+                <div class="select-container">
+                    <select name="paymentTenure" id="idPaymentTenure">
+                        <option value=3>3 Months</option>
+                        <option value=6> 6 Months</option>
+                        <option value=9> 9 Months</option>
+                        <option value=12> 12 Months</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-field lineClass">
+                <label>Do you have any existing loans?</label>
+                <span>
+                    <label class="switchBtn">
+                        <input type="checkbox" checked>
+                        <span class="slider round shrink" style="width: 60px;"></span>
+                </label>
+                </span>
+            </div>
+            <div class="form-field">
+                <label for="presentEMI">EMI of existing loan (optional)</label>
+                <div class="select-container">
+                    <input type="text" name="presentEmi" placeholder="₹ 15000">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="flex-item-result box">
+        <h3>Loan Amount </h3>
+        <p> ₹ 100000 </p>
+        <h3>Your EMI will be</h3>
+        <p>₹ 15000</p>
+        <div>
+            <app-app-button [btnStyleClass]="'white'" [btnText]="'Get Money'"></app-app-button>
+        </div>
+    </div>
+    <img src="assets/accounting_dots.svg" alt="dots" class="dots">
+</div>

@@ -1,0 +1,11 @@
+<label>{{label}}</label>
+<div class="range-slider">
+    <h1>₹ {{rangeValue}}</h1>
+    <div class="sliderInput">
+        <input type='range' name="rangeIncome" min="{{min}}" max="{{max}}" (click)="onRangeValueChange($event)" [style.background]="'linear-gradient(to right, purple 0%, purple '+ percent +'%, #e7daff ' + percent + '%, #e7daff 100%)'" />
+    </div>
+    <div class="flex-container" *ngIf="max!=100000">
+        <p>₹ 100000 </p>
+        <p>₹ 300000</p>
+    </div>
+</div>

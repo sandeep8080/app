@@ -1,0 +1,23 @@
+<header id="idNavBar">
+    <nav class="flexBox-container">
+        <div class="flexBox-container-logo">
+            <img id="idLogo" src="assets/logo.png" alt="open logo" class="header-logo">
+        </div>
+        <ul class="nav-items">
+            <li>
+                <a class="nav-link" href="#">Products <span class="sr-only">(current)</span></a>
+            </li>
+            <li>
+                <a class="nav-link" href="#">Solutions</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+        </ul>
+        <div style="margin: 0px 50px;">
+            <app-app-button [btnStyleClass]="'BlankBtn'" [btnText]="'Login'"></app-app-button>
+            <app-app-button [btnStyleClass]="'fillBtn'" [btnText]="'Get Started'"></app-app-button>
+        </div>
+
+    </nav>
+</header>
